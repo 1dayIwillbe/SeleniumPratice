@@ -39,7 +39,11 @@ public class TestSwitchWindow extends Utility {
                 driver.close();
                 break;
                 }
-        }
+             }
+
+        //Switch back to parant window
+        driver.switchTo().window(parentHandle);
+        sendTextToElement(By.id("name"),"Test Successful");
 
     }
 
