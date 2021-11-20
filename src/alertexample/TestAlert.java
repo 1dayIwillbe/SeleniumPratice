@@ -17,6 +17,8 @@ public class TestAlert extends Utility {
         clickOnElement(By.xpath("//input[@title='Sign in']")); //Click on sign in button
         Alert alert = driver.switchTo().alert(); //Creating alert objcet reference and switch to alert
         alert.accept(); //accepting Alert
+        alert.getText();
+
 
     }
 

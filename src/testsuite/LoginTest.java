@@ -33,6 +33,7 @@ public class LoginTest extends Utility {
         String expectedMessage = "No customer account found";
         String actualMessage = driver.findElement(By.xpath("//li[normalize-space()='No customer account found']")).getText();
         Assert.assertEquals("error message is not displayed,", expectedMessage);
+
     }
 
     @After
